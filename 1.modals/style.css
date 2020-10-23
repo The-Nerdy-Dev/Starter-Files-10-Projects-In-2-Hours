@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-attachment: fixed;
+  background-size: cover;
+}
+button {
+  display: block;
+  margin: 400px auto;
+  background: rgb(34, 158, 67);
+  color: white;
+  border: 0;
+  padding: 10px 20px;
+  border-radius: 6px;
+  box-shadow: 2px 3px 2px rgba(115, 82, 82, 0.7);
+  font-size: 16px;
+}
+#modal-submit {
+  margin: 20px auto;
+}
+button:hover {
+  opacity: 0.7;
+}
+.modal-container {
+  display: none;
+  background: rgba(115, 82, 82, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal {
+  font-family: arial;
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+  margin: 10% auto;
+  padding: 20px;
+  background: white;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  overflow: hidden;
+  animation-name: modalopen;
+  animation-duration: 1s;
+}
+
+.close-modal {
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    cursor: pointer;
+}
+
+@keyframes modalopen {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

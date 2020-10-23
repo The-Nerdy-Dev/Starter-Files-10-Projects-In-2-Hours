@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Salary Calculator Demo Application</title>
+    <link rel="stylesheet" href="app.css">
+    <script src="models/calculator.model.js" defer></script>
+    <script src="controllers/calculator.controller.js" defer></script>
+  </head>
+<body>
+   <div class="container">
+      <h1>Salary Calculator Demo Application</h1>
+    <div class="salary__input">
+      <h2 id="message"></h2>
+      <label for="salary">Salary</label>
+      <input type="text" placeholder="Enter the salary" id="salary">
+      <button id="compute">Compute Salary</button>
+    </div>
+    <fieldset id="details__info">
+        <legend>Details</legend>
+        <p>House Rental Allowance :  <span id="getHouseRentalAllowance"></span></p>
+        <p>Dearness Allowance is <span id="getDearnessAllowance"></span></p>
+        <p>Travel Allowance is <span id="getTravelAllowance"></span></p>
+        <p>Provident Fund is <span id="getProvidentFund"></span></p>
+        <p>GS is <span id="getGrossSalary"></span></p>
+        <p>Tax is <span id="getTax"></span></p>
+        <p>NS is <span id="getNetSalary"></span></p>
+    </fieldset>
+   </div>
+</body>
+</html>
